@@ -1,7 +1,8 @@
 FROM java:8
 
-COPY src src
+COPY src /root/src
 
+WORKDIR /root/
 
 RUN mkdir bin && javac -d bin src/HelloWorld.java
 
